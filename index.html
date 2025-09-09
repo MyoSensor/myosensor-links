@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MyoSensor — Виберіть спосіб звʼязку</title>
+  <meta name="description" content="Швидкі кнопки: WhatsApp, Telegram, Facebook, Messenger, Instagram, Дзвінок, Email.">
+  <meta property="og:title" content="MyoSensor — контакти">
+  <meta property="og:description" content="Натисніть кнопку, щоб звʼязатися з MyoSensor.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#1f6feb">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%231f6feb'/%3E%3Ctext x='50%' y='54%' text-anchor='middle' font-family='Arial,Helvetica,sans-serif' font-size='34' fill='white'%3EMS%3C/text%3E%3C/svg%3E">
+  <style>
+    :root {
+      --bg: #0f1115;
+      --card: #171a21;
+      --text: #f2f4f8;
+      --muted: #aab2c5;
+      --btn: #1f6feb;
+      --btn2: #0e61db;
+      --btn-hover: #2b7cff;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg: #f6f8fb;
+        --card: #ffffff;
+        --text: #0b1220;
+        --muted: #51607a;
+      }
+    }
+    * { box-sizing: border-box; }
+    html,body { height: 100%; }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(1200px 700px at 80% -10%, rgba(53,112,255,0.12), transparent),
+        radial-gradient(1200px 700px at 10% 110%, rgba(53,112,255,0.10), transparent),
+        var(--bg);
+      color: var(--text);
+      font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+    main {
+      width: 100%;
+      max-width: 540px;
+      background: var(--card);
+      border-radius: 18px;
+      box-shadow: 0 10px 30px rgba(0,0,0,.15);
+      padding: 28px;
+    }
+    .brand {
+      display: flex; align-items: center; gap: 14px; margin-bottom: 8px;
+    }
+    .logo {
+      width: 48px; height: 48px; border-radius: 14px;
+      display: grid; place-items: center;
+      background: linear-gradient(135deg, #2b7cff, #6aa8ff);
+      color: white; font-weight: 800; letter-spacing: .5px;
+      text-shadow: 0 1px 0 rgba(0,0,0,.15);
+    }
+    h1 { font-size: 22px; margin: 0; }
+    p.muted { color: var(--muted); margin: 6px 0 22px; }
+    .btns { display: grid; gap: 14px; }
+    a.btn {
+      display: grid;
+      grid-template-columns: 40px 1fr 18px;
+      align-items: center;
+      gap: 12px;
+      text-decoration: none;
+      padding: 14px 16px;
+      background: linear-gradient(180deg, var(--btn), var(--btn2));
+      color: white;
+      border-radius: 14px;
+      box-shadow: 0 6px 16px rgba(31,111,235,.28);
+      transition: transform .08s ease, box-shadow .12s ease, background .12s ease;
+    }
+    a.btn:hover { background: var(--btn-hover); transform: translateY(-1px); box-shadow: 0 10px 22px rgba(31,111,235,.35); }
+    a.btn:active { transform: translateY(0); }
+    .icon {
+      width: 40px; height: 40px; border-radius: 10px;
+      display: grid; place-items: center; background: rgba(255,255,255,.12);
+      font-size: 20px;
+    }
+    .arrow { opacity: .7; }
+    footer { margin-top: 22px; text-align: center; color: var(--muted); font-size: 13px; }
+    .small { font-size: 12px; color: var(--muted); margin-top: 6px; }
+  </style>
+</head>
+<body>
+  <main role="main" aria-labelledby="title">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">MS</div>
+      <div>
+        <h1 id="title">Виберіть спосіб звʼязку</h1>
+        <p class="muted">MyoSensor • швидкі кнопки для месенджерів і соцмереж</p>
+      </div>
+    </div>
+
+    <div class="btns">
+      <a class="btn" href="https://wa.me/12799007342" target="_blank" rel="noopener">
+        <span class="icon">📲</span><span>WhatsApp</span><span class="arrow">›</span>
+      </a>
+      <a class="btn" href="https://t.me/MyoSensor" target="_blank" rel="noopener">
+        <span class="icon">✈️</span><span>Telegram</span><span class="arrow">›</span>
+      </a>
+      <a class="btn" href="https://facebook.com/myosensor" target="_blank" rel="noopener">
+        <span class="icon">📘</span><span>Facebook</span><span class="arrow">›</span>
+      </a>
+      <a class="btn" href="https://m.me/myosensor" target="_blank" rel="noopener">
+        <span class="icon">💬</span><span>Messenger</span><span class="arrow">›</span>
+      </a>
+      <a class="btn" href="https://instagram.com/myosensor" target="_blank" rel="noopener">
+        <span class="icon">📷</span><span>Instagram</span><span class="arrow">›</span>
+      </a>
+      <a class="btn" href="viber://chat?number=%2B12799007342">
+        <span class="icon">📟</span><span>Viber</span><span class="arrow">›</span>
+      </a>
+      <a class="btn" href="tel:+12799007342">
+        <span class="icon">📞</span><span>Подзвонити</span><span class="arrow">›</span>
+      </a>
+      <a class="btn" href="mailto:myosensor@gmail.com">
+        <span class="icon">✉️</span><span>Email</span><span class="arrow">›</span>
+      </a>
+    </div>
+
+    <footer>
+      <div class="small">Порада: додайте це посилання у біо соцмереж і на QR-коди у друці.</div>
+    </footer>
+  </main>
+</body>
+</html>
