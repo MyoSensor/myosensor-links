@@ -12,3 +12,5 @@
 - У **Settings → Pages** додайте **Custom domain**, напр. `links.mydomain.com` — GitHub створить файл `CNAME`.
 - У DNS додайте запис **CNAME** для `links` → `<username>.github.io`.
 - Вмикайте **Enforce HTTPS**.
+
+Оновлено: тест для деплою.
