@@ -1,0 +1,170 @@
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MyoSensor — контакти</title>
+  <meta name="description" content="Усі способи звʼязку: Facebook, Instagram, Messenger, Telegram, Viber, WhatsApp, дзвінок, email.">
+  <meta name="theme-color" content="#1f6feb">
+  <style>
+    :root { --bg:#0f1115; --card:#171a21; --text:#f2f4f8; --muted:#aab2c5; --btn1:#1f6feb; --btn2:#0e61db; --btn-hover:#2b7cff; }
+    @media (prefers-color-scheme: light) { :root { --bg:#f6f8fb; --card:#ffffff; --text:#0b1220; --muted:#51607a; } }
+    * { box-sizing:border-box; }
+    html,body { height:100%; }
+    body {
+      margin:0;
+      background:
+        radial-gradient(1200px 700px at 80% -10%, rgba(53,112,255,0.12), transparent),
+        radial-gradient(1200px 700px at 10% 110%, rgba(53,112,255,0.10), transparent),
+        var(--bg);
+      color:var(--text);
+      font:16px/1.55 system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+      display:grid; place-items:center; padding:24px;
+    }
+    main { width:100%; max-width:560px; background:var(--card); border-radius:18px; box-shadow:0 10px 30px rgba(0,0,0,.15); padding:28px; }
+    .brand { display:flex; align-items:center; gap:14px; margin-bottom:8px; }
+    .logo { width:48px; height:48px; border-radius:14px; display:grid; place-items:center;
+      background: linear-gradient(135deg, #2b7cff, #6aa8ff); color:white; font-weight:800; letter-spacing:.5px; }
+    h1 { font-size:22px; margin:0; }
+    p.muted { color:var(--muted); margin:6px 0 22px; }
+    .btns { display:grid; gap:14px; }
+    a.btn {
+      display:grid; grid-template-columns:48px 1fr 18px; align-items:center; gap:12px;
+      text-decoration:none; padding:14px 16px;
+      background: linear-gradient(180deg, var(--btn1), var(--btn2));
+      color:white; border-radius:14px; box-shadow:0 6px 16px rgba(31,111,235,.28);
+      transition: transform .08s ease, box-shadow .12s ease, background .12s ease;
+    }
+    a.btn:hover { background:var(--btn-hover); transform:translateY(-1px); box-shadow:0 10px 22px rgba(31,111,235,.35); }
+    a.btn:active { transform:translateY(0); }
+    .icon { width:48px; height:48px; border-radius:12px; display:grid; place-items:center; }
+    .icon svg { width:42px; height:42px; display:block; margin:auto; }
+    .label { font-size:18px; font-weight:600; letter-spacing:.2px; }
+    .arrow { opacity:.7; font-size:18px; }
+    .small { font-size:12px; color:var(--muted); margin-top:12px; }
+  </style>
+</head>
+<body>
+  <main role="main" aria-labelledby="title">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">MS</div>
+      <div>
+        <h1 id="title">Виберіть спосіб звʼязку</h1>
+        <p class="muted">MyoSensor • швидкі кнопки для месенджерів і соцмереж</p>
+      </div>
+    </div>
+
+    <div class="btns">
+      <!-- 1. Facebook -->
+      <a class="btn" href="https://facebook.com/MyoSensor.kuz" target="_blank" rel="noopener">
+        <span class="icon" aria-hidden="true">
+          <!-- Balanced circular fb icon -->
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Facebook">
+            <defs><linearGradient id="fbG" x1="0" x2="1"><stop offset="0" stop-color="#2d88ff"/><stop offset="1" stop-color="#1660e6"/></linearGradient></defs>
+            <circle cx="24" cy="24" r="21" fill="url(#fbG)"/>
+            <path d="M27 36V25h4l1-5h-5v-3c0-1.6.5-2.5 2.6-2.5H32V10.3C31 10.1 29.4 10 27.6 10c-4 0-6.6 2.4-6.6 6.9V20h-4v5h4v11h6z" fill="#fff"/>
+          </svg>
+        </span>
+        <span class="label">Facebook</span><span class="arrow">›</span>
+      </a>
+
+      <!-- 2. Instagram -->
+      <a class="btn" href="https://instagram.com/myosensor" target="_blank" rel="noopener">
+        <span class="icon" aria-hidden="true">
+          <!-- Centered rounded square with lens -->
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Instagram">
+            <defs><radialGradient id="igG" cx="0.7" cy="0.2" r="1">
+              <stop offset="0" stop-color="#ffd76f"/><stop offset="0.4" stop-color="#f56040"/>
+              <stop offset="0.7" stop-color="#fd1d1d"/><stop offset="1" stop-color="#833ab4"/></radialGradient></defs>
+            <rect x="7" y="7" width="34" height="34" rx="9" fill="url(#igG)"/>
+            <circle cx="34.5" cy="14.5" r="3" fill="#fff"/>
+            <circle cx="24" cy="24" r="8" fill="none" stroke="#fff" stroke-width="4" stroke-linecap="round"/>
+          </svg>
+        </span>
+        <span class="label">Instagram</span><span class="arrow">›</span>
+      </a>
+
+      <!-- 3. Messenger -->
+      <a class="btn" href="https://m.me/MyoSensor.kuz" target="_blank" rel="noopener">
+        <span class="icon" aria-hidden="true">
+          <!-- Centered bubble -->
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Messenger">
+            <defs><linearGradient id="msG" x1="0" x2="1"><stop offset="0" stop-color="#00c6ff"/><stop offset="1" stop-color="#006aff"/></linearGradient></defs>
+            <path d="M24 6c-10 0-18 7.6-18 16.9 0 5.3 2.7 10 7 12.9v5.3l5.3-2.9c1.7.5 3.6.7 5.7.7 10 0 18-7.6 18-16.9S34 6 24 6z" fill="url(#msG)"/>
+            <path d="M20.5 26.5l-6-6-8.5 4.7L16.5 13l6 6 8.5-4.7-10.5 12.2z" fill="#fff"/>
+          </svg>
+        </span>
+        <span class="label">Messenger</span><span class="arrow">›</span>
+      </a>
+
+      <!-- 4. Telegram -->
+      <a class="btn" href="https://t.me/MyoSensor" target="_blank" rel="noopener">
+        <span class="icon" aria-hidden="true">
+          <!-- Centered circle plane -->
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Telegram">
+            <defs><linearGradient id="tgG" x1="0" x2="1"><stop offset="0" stop-color="#2ca5e0"/><stop offset="1" stop-color="#229ed9"/></linearGradient></defs>
+            <circle cx="24" cy="24" r="21" fill="url(#tgG)"/>
+            <path d="M35 13 10.5 23.3c-1 .4-.9 1.9.1 2.1l6 1.8c.3.1.7 0 1-.2l6.9-4.3c.2-.1.5.1.4.3l-5.1 6c-.2.3-.2.7.1 1l6.8 5c.3.2.8.1 1-.3L36.6 14c.3-.9-.6-1.7-1.6-1z" fill="#fff"/>
+          </svg>
+        </span>
+        <span class="label">Telegram</span><span class="arrow">›</span>
+      </a>
+
+      <!-- 5. Viber -->
+      <a class="btn" href="viber://chat?number=%2B12799007342">
+        <span class="icon" aria-hidden="true">
+          <!-- Centered purple circle handset -->
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Viber">
+            <defs><linearGradient id="vbG" x1="0" x2="1"><stop offset="0" stop-color="#9b5fff"/><stop offset="1" stop-color="#7b3fde"/></linearGradient></defs>
+            <circle cx="24" cy="24" r="21" fill="url(#vbG)"/>
+            <path d="M17 18c1 5 5 9 10 10l2.5-2a2 2 0 0 1 2 .2l3 1.7c.5.3.7.9.4 1.4-1.2 2-3.8 3.8-6 3.8-6.6 0-12-5.4-12-12 0-2.2 1.8-4.8 3.8-6 .5-.3 1.1-.1 1.4.4l1.7 3a2 2 0 0 1 .2 2L17 18z" fill="#fff"/>
+          </svg>
+        </span>
+        <span class="label">Viber</span><span class="arrow">›</span>
+      </a>
+
+      <!-- 6. WhatsApp -->
+      <a class="btn" href="https://wa.me/12799007342" target="_blank" rel="noopener">
+        <span class="icon" aria-hidden="true">
+          <!-- Centered green circle phone -->
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="WhatsApp">
+            <defs><linearGradient id="waG" x1="0" x2="1"><stop offset="0" stop-color="#25d366"/><stop offset="1" stop-color="#20be5a"/></linearGradient></defs>
+            <circle cx="24" cy="24" r="21" fill="url(#waG)"/>
+            <path d="M30.5 28.1c-.2 0-.5.3-1.3.2s-1.8-.5-3-.9c-1.1-.6-2-1.4-2.8-2.4-.8-1-1.3-1.9-1.5-2.6 0-.3 0-.6.1-.7l.8-1c.2-.3.3-.5.4-.8l.3-.4c.2-.3.2-.5.2-.7l-.4-1.3c-.2-.5-.5-.5-.8-.5h-.7c-.2 0-.5 0-.8.5-.4.5-1.2 1.3-1.2 3.1s1.4 3.6 1.6 3.8c.2.3 2.8 4.6 6.9 6.2 1 .5 1.6.6 2.1.8.9.3 1.7.3 2.3.2.8-.2 2.4-1 2.7-2 .3-.9.3-1.6.2-1.8-.1-.2-.4-.4-.7-.4z" fill="#fff"/>
+          </svg>
+        </span>
+        <span class="label">WhatsApp</span><span class="arrow">›</span>
+      </a>
+
+      <!-- 7. Call -->
+      <a class="btn" href="tel:+112799007342">
+        <span class="icon" aria-hidden="true">
+          <!-- Centered teal circle handset -->
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Phone">
+            <defs><linearGradient id="phG" x1="0" x2="1"><stop offset="0" stop-color="#00b3c6"/><stop offset="1" stop-color="#0199ad"/></linearGradient></defs>
+            <circle cx="24" cy="24" r="21" fill="url(#phG)"/>
+            <path d="M34 28v5c0 1-1 2-2 2A18 18 0 0 1 13 16c0-1 1-2 2-2h5c1 0 2 1 2 2l.4 2.9c.1.6 0 1.1-.5 1.6l-2 2a14 14 0 0 0 6.6 6.6l2-2c.4-.4 1-.6 1.6-.5l2.9.4c1 0 2 1 2 2z" fill="#fff"/>
+          </svg>
+        </span>
+        <span class="label">Подзвонити</span><span class="arrow">›</span>
+      </a>
+
+      <!-- 8. Email -->
+      <a class="btn" href="mailto:myosensor@gmail.com">
+        <span class="icon" aria-hidden="true">
+          <!-- Centered orange circle envelope -->
+          <svg viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Email">
+            <defs><linearGradient id="mlG" x1="0" x2="1"><stop offset="0" stop-color="#ff9f43"/><stop offset="1" stop-color="#ff7a29"/></linearGradient></defs>
+            <circle cx="24" cy="24" r="21" fill="url(#mlG)"/>
+            <rect x="13" y="17" width="22" height="16" rx="2" fill="#fff" opacity=".98"/>
+            <path d="M13 19l11 8 11-8" fill="none" stroke="#ff7a29" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <span class="label">Email</span><span class="arrow">›</span>
+      </a>
+    </div>
+
+    <p class="small">Примітка: iOS/Android можуть показувати підтвердження для деяких схем (наприклад, Viber). Це політика безпеки ОС.</p>
+  </main>
+</body>
+</html>
