@@ -6,29 +6,48 @@
   <title>MyoSensor — контакти</title>
   <meta name="theme-color" content="#1f6feb">
   <style>
-    :root { --bg:#0f1115; --card:#171a21; --text:#f2f4f8; --muted:#aab2c5; }
-    @media (prefers-color-scheme: light) { :root { --bg:#f6f8fb; --card:#ffffff; --text:#0b1220; --muted:#51607a; } }
+    :root{
+      --bg:#0f1115; --card:#171a21; --text:#f2f4f8; --muted:#aab2c5;
+      --btn1:#2a77ff; --btn2:#0e61db; --btnh:#2b7cff;
+    }
+    @media (prefers-color-scheme: light){
+      :root{ --bg:#f6f8fb; --card:#ffffff; --text:#0b1220; --muted:#51607a; }
+    }
     *{box-sizing:border-box}
-    body{margin:0;background:
-      radial-gradient(1200px 700px at 80% -10%, rgba(53,112,255,0.12), transparent),
-      radial-gradient(1200px 700px at 10% 110%, rgba(53,112,255,0.10), transparent),
-      var(--bg);color:var(--text);font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
-      display:grid;place-items:center;min-height:100vh;padding:24px}
-    main{width:100%;max-width:560px;background:var(--card);border-radius:18px;box-shadow:0 10px 30px rgba(0,0,0,.15);padding:28px}
-    .brand{display:flex;gap:14px;align-items:center;margin-bottom:10px}
-    .logo{width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:linear-gradient(135deg,#2b7cff,#6aa8ff);color:#fff;font-weight:800}
-    h1{font-size:22px;margin:0}
-    .muted{color:var(--muted);margin:6px 0 22px}
-    .btns{display:grid;gap:14px}
-    a.btn{display:grid;grid-template-columns:44px 1fr 18px;align-items:center;gap:12px;text-decoration:none;
-      padding:14px 16px;border-radius:14px;background:linear-gradient(180deg,#2b7cff,#0e61db);color:#fff;
-      box-shadow:0 6px 16px rgba(31,111,235,.28);transition:.12s}
-    a.btn:hover{transform:translateY(-1px);box-shadow:0 10px 22px rgba(31,111,235,.35)}
-    .iconBox{width:44px;height:44px;border-radius:10px;display:grid;place-items:center;
-      background:linear-gradient(180deg,#e8f1ff,#cfe2ff);box-shadow:inset 0 1px 0 #fff3,inset 0 -1px 0 #0001}
-    .iconBox svg{width:22px;height:22px;display:block;fill:#2563eb}
+    body{
+      margin:0; min-height:100vh; display:grid; place-items:center; padding:24px;
+      background:
+        radial-gradient(1200px 700px at 80% -10%, rgba(53,112,255,0.12), transparent),
+        radial-gradient(1200px 700px at 10% 110%, rgba(53,112,255,0.10), transparent),
+        var(--bg);
+      color:var(--text);
+      font:16px/1.55 system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+    main{width:100%; max-width:560px; background:var(--card); border-radius:18px;
+         box-shadow:0 10px 30px rgba(0,0,0,.15); padding:28px}
+    .brand{display:flex; align-items:center; gap:14px; margin-bottom:10px}
+    .logo{width:44px; height:44px; border-radius:12px; display:grid; place-items:center;
+          background:linear-gradient(135deg,#2b7cff,#6aa8ff); color:#fff; font-weight:800}
+    h1{margin:0; font-size:22px}
+    .muted{color:var(--muted); margin:6px 0 22px}
+    .btns{display:grid; gap:14px}
+    a.btn{
+      display:grid; grid-template-columns:46px 1fr 18px; align-items:center; gap:12px;
+      text-decoration:none; padding:14px 16px; border-radius:14px;
+      background:linear-gradient(180deg,var(--btn1),var(--btn2)); color:#fff;
+      box-shadow:0 6px 16px rgba(31,111,235,.28); transition:.12s;
+    }
+    a.btn:hover{transform:translateY(-1px); background:var(--btnh); box-shadow:0 10px 22px rgba(31,111,235,.35)}
+    .ibox{
+      width:46px; height:46px; border-radius:11px; display:grid; place-items:center;
+      overflow:hidden; position:relative;
+      box-shadow:inset 0 1px 0 #ffffff66, inset 0 -1px 0 #00000014;
+    }
+    .ibox > .bg{position:absolute; inset:0}
+    .ibox svg{position:relative; width:22px; height:22px; display:block; fill:#ffffff}
     .arrow{opacity:.75}
-    .note{margin-top:12px;color:var(--muted);font-size:12px}
+    .note{margin-top:12px; color:var(--muted); font-size:12px}
   </style>
 </head>
 <body>
@@ -42,76 +61,87 @@
   </div>
 
   <div class="btns">
-    <!-- 1. Facebook -->
+    <!-- Facebook -->
     <a class="btn" href="https://facebook.com/MyoSensor.kuz" target="_blank" rel="noopener">
-      <span class="iconBox" aria-hidden="true">
-        <svg viewBox="0 0 24 24"><path d="M13.5 22v-8h2.7l.4-3h-3.1V9.2c0-.9.3-1.5 1.7-1.5H17V5.1c-.3 0-1.3-.1-2.4-.1-2.4 0-4 1.5-4 4.2V11H8v3h2.6v8h2.9z"/></svg>
+      <span class="ibox" aria-hidden="true">
+        <span class="bg" style="background:#1877F2;"></span>
+        <svg viewBox="0 0 24 24"><path d="M13.5 22v-8h2.7l.4-3h-3.1V9.2c0-.9.3-1.5 1.7-1.5H17V5.1c-1 0-2-.1-3.1-.1-2.4 0-4 1.5-4 4.2V11H8v3h1.9v8h3.6z"/></svg>
       </span>
       <span>Facebook</span><span class="arrow">›</span>
     </a>
 
-    <!-- 2. Instagram -->
+    <!-- Instagram -->
     <a class="btn" href="https://instagram.com/myosensor" target="_blank" rel="noopener">
-      <span class="iconBox" aria-hidden="true">
+      <span class="ibox" aria-hidden="true">
+        <span class="bg" style="background:radial-gradient(40% 40% at 30% 30%,#FFDC80 0%,#FCAF45 30%,#F77737 55%,#F56040 70%,#E1306C 85%,#C13584 100%);"></span>
         <svg viewBox="0 0 24 24">
-          <path d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z"/>
-          <circle cx="12" cy="12" r="4"/>
-          <circle cx="17.5" cy="6.5" r="1.5"/>
+          <rect x="4" y="4" width="16" height="16" rx="4" ry="4" fill="none" stroke="#fff" stroke-width="2.2"/>
+          <circle cx="12" cy="12" r="3.8" fill="none" stroke="#fff" stroke-width="2.2"/>
+          <circle cx="17.2" cy="6.8" r="1.4" fill="#fff"/>
         </svg>
       </span>
       <span>Instagram</span><span class="arrow">›</span>
     </a>
 
-    <!-- 3. Messenger -->
+    <!-- Messenger -->
     <a class="btn" href="https://m.me/MyoSensor.kuz" target="_blank" rel="noopener">
-      <span class="iconBox" aria-hidden="true">
+      <span class="ibox" aria-hidden="true">
+        <span class="bg" style="background:linear-gradient(135deg,#00C6FF,#0068FF);"></span>
         <svg viewBox="0 0 24 24"><path d="M12 2C6.5 2 2 6.1 2 11.1c0 2.9 1.4 5.4 3.7 7.1v3.8l3.4-1.9c.9.3 1.9.5 2.9.5 5.5 0 10-4.1 10-9.2S17.5 2 12 2zm1 11.8-2.6-2.8-5 2.8 5.5-5.9 2.6 2.8 4.9-2.8L13 13.8z"/></svg>
       </span>
       <span>Messenger</span><span class="arrow">›</span>
     </a>
 
-    <!-- 4. Telegram -->
+    <!-- Telegram -->
     <a class="btn" href="https://t.me/MyoSensor" target="_blank" rel="noopener">
-      <span class="iconBox" aria-hidden="true">
+      <span class="ibox" aria-hidden="true">
+        <span class="bg" style="background:#229ED9;"></span>
         <svg viewBox="0 0 24 24"><path d="M9.04 16.29 9.2 12.9l7.03-6.33c.31-.28-.07-.42-.47-.18L7.8 11.2l-3.3-1.03c-.71-.22-.72-.71.16-1.06l16.28-6.28c.66-.3 1.29.16 1.03 1.26l-2.77 13.04c-.19.9-.71 1.12-1.43.7l-4-2.95-1.93 1.87c-.21.21-.38.38-.77.38z"/></svg>
       </span>
       <span>Telegram</span><span class="arrow">›</span>
     </a>
 
-    <!-- 5. Viber -->
+    <!-- Viber -->
     <a class="btn" href="viber://chat?number=%2B12799007342">
-      <span class="iconBox" aria-hidden="true">
+      <span class="ibox" aria-hidden="true">
+        <span class="bg" style="background:#7360F2;"></span>
         <svg viewBox="0 0 24 24"><path d="M17.2 2H6.8A4.8 4.8 0 0 0 2 6.8v6.4A4.8 4.8 0 0 0 6.8 18h1.9l1.6 3.5c.2.5.9.5 1.1 0L13 18h4.2A4.8 4.8 0 0 0 22 13.2V6.8A4.8 4.8 0 0 0 17.2 2zM7.5 7h1.2c.2 2 1.8 3.5 3.9 3.7V12c-2.5 0-4.6-2-5.1-4.5zM14.3 7c1.5.2 2.7 1.4 2.9 2.9H16c-.2-1-.9-1.7-1.7-1.9V7zM12.6 7c1.9.2 3.4 1.7 3.6 3.6h-1.2c-.2-1.3-1.1-2.2-2.4-2.4V7z"/></svg>
       </span>
       <span>Viber</span><span class="arrow">›</span>
     </a>
 
-    <!-- 6. WhatsApp -->
+    <!-- WhatsApp -->
     <a class="btn" href="https://wa.me/12799007342" target="_blank" rel="noopener">
-      <span class="iconBox" aria-hidden="true">
+      <span class="ibox" aria-hidden="true">
+        <span class="bg" style="background:#25D366;"></span>
         <svg viewBox="0 0 24 24"><path d="M20 3.9A10 10 0 0 0 3.5 18.3L3 22l3.8-1A10 10 0 1 0 20 3.9Zm-4.1 12c-.2 0-.5.2-1 .1s-1.1-.4-1.9-.9c-.8-.5-1.3-1-1.9-1.8-.5-.6-.8-1.1-.9-1.5 0-.2 0-.4.1-.6l.5-.6c.1-.2.2-.3.3-.5l.2-.3c.1-.2.1-.4.1-.5l-.4-1.1c-.1-.3-.3-.4-.5-.4h-.4c-.2 0-.4 0-.6.3-.3.3-.9.9-.9 2.3s1 2.6 1.1 2.7c.1.2 1.9 2.9 4.6 4 .6.3 1 .4 1.3.5.6.2 1.2.2 1.6.1.5-.2 1.6-.7 1.8-1.3.2-.7.2-1.2.1-1.4-.1-.1-.3-.3-.6-.3Z"/></svg>
       </span>
       <span>WhatsApp</span><span class="arrow">›</span>
     </a>
 
-    <!-- 7. Call -->
+    <!-- Call -->
     <a class="btn" href="tel:+112799007342">
-      <span class="iconBox" aria-hidden="true">
-        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.86.32 1.7.59 2.5a2 2 0 0 1-.45 2.11L8.1 9.9a16 16 0 0 0 6 6l1.57-1.09a2 2 0 0 1 2.11-.45c.8.27 1.64.47 2.5.59A2 2 0 0 1 22 16.92z" fill="#2563eb"/></svg>
+      <span class="ibox" aria-hidden="true">
+        <span class="bg" style="background:#10B981;"></span>
+        <svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.8 19.8 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.86.32 1.7.59 2.5a2 2 0 0 1-.45 2.11L8.1 9.9a16 16 0 0 0 6 6l1.57-1.09a2 2 0 0 1 2.11-.45c.8.27 1.64.47 2.5.59A2 2 0 0 1 22 16.92z"/></svg>
       </span>
       <span>Подзвонити</span><span class="arrow">›</span>
     </a>
 
-    <!-- 8. Email -->
+    <!-- Email -->
     <a class="btn" href="mailto:myosensor@gmail.com">
-      <span class="iconBox" aria-hidden="true">
-        <svg viewBox="0 0 24 24"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z" fill="#2563eb"/><path d="m22 6-10 7L2 6" fill="none" stroke="#2563eb" stroke-width="1.8"/></svg>
+      <span class="ibox" aria-hidden="true">
+        <span class="bg" style="background:#F97316;"></span>
+        <svg viewBox="0 0 24 24">
+          <rect x="3" y="5" width="18" height="14" rx="2" ry="2" fill="#fff"/>
+          <path d="M21 7 12 13 3 7" fill="none" stroke="#FDBA74" stroke-width="1.8"/>
+        </svg>
       </span>
       <span>Email</span><span class="arrow">›</span>
     </a>
   </div>
 
-  <div class="note">iOS/Android іноді питає підтвердження перед відкриттям застосунків (Viber/Telegram) — це нормально.</div>
+  <div class="note">Підтвердження від iOS/Android перед відкриттям деяких застосунків (Viber/Telegram) — нормальна поведінка системи.</div>
 </main>
 </body>
 </html>
